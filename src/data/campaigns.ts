@@ -217,39 +217,4 @@ export const campaigns: Campaign[] = [
         { src: '/media/wwf/wwf-team-panda.jpg', caption: 'At the WWF Belgium office after the session.' },
       ],
     },
-  /* ----------------------------------------------------------
-     4 — LEADERSHIP HANDOVER
-     ---------------------------------------------------------- */
-  {
-    id: 'successor',
-    title: 'Recruiting my own successor',
-    org: 'AIESEC',
-    period: 'Feb 2025',
-    objective:
-      'increase the number of qualified applicants for the role I was leaving.',
-    audience:
-      'Members who were interested in the role but did not understand what it involved day to day.',
-    approach:
-      'The written role description was not converting, because the job is hard to picture. So I explained it on camera instead: what the work actually is, what it is not, and what you need to be able to do.',
-    kpis: [
-      { n: '0', l: 'applications before' },
-      { n: '5', l: 'applications after' },
-    ],
-    timeline: [
-      { when: 'Before', what: 'Written role description only' },
-      { when: 'Intervention', what: 'Explainer videos published' },
-      { when: 'After', what: 'Applications tracked and compared' },
-    ],
-    assets: [
-      {
-        id: 's-explainer',
-        title: 'Explaining the role to the people who would replace me',
-        src: '/media/video/successor-role-explainer.mp4',
-        poster: '/media/posters/successor-role-explainer.jpg',
-        badge: 'Explainer',
-        duration: '2:04',
-        why: 'Presented in French because that is the language the audience thinks in. Direct to camera, no edit tricks, because the point was clarity rather than production value.',
-      },
-    ],
-  },
-];
+  
