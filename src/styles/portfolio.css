@@ -4,14 +4,14 @@
    TOKENS
    ============================================================ */
 :root {
-  --ink:        #1C1B18;
-  --ink-soft:   #2E2C27;
-  --ink-line:   #403D36;
-  --paper:      #FBFAF6;
-  --paper-dim:  #EDE9DF;
+  --ink:        #5A1A15;
+  --ink-soft:   #6E2A24;
+  --ink-line:   #8A3A33;
+  --paper:      #F3EFE7;
+  --paper-dim:  #E5DED1;
   --signal:     #FFCC00;
-  --muted:      #6B675E;
-  --muted-light:#A9A498;
+  --muted:      #6B5A4E;
+  --muted-light:#D9C4BF;
 
   --font-display: 'Archivo', system-ui, sans-serif;
   --font-body:    'Source Serif 4', Georgia, serif;
@@ -107,7 +107,7 @@ body {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to top, rgba(22,32,43,0.96) 0%, rgba(22,32,43,0.35) 55%, rgba(22,32,43,0.65) 100%);
+    linear-gradient(to top, rgba(90,26,21,0.96) 0%, rgba(90,26,21,0.35) 55%, rgba(90,26,21,0.65) 100%);
 }
 
 .hero__inner {
@@ -275,10 +275,10 @@ body {
   inset: 0;
   display: grid;
   place-items: center;
-  background: rgba(22,32,43,0.28);
+  background: rgba(90,26,21,0.28);
   transition: background 160ms ease;
 }
-.vcard__frame:hover .vcard__play { background: rgba(22,32,43,0.12); }
+.vcard__frame:hover .vcard__play { background: rgba(90,26,21,0.12); }
 .vcard__play span {
   width: 46px; height: 46px;
   border-radius: 50%;
@@ -483,7 +483,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: 60;
-  background: rgba(10,15,21,0.94);
+  background: rgba(38,10,8,0.95);
   display: grid;
   place-items: center;
   padding: clamp(16px, 4vw, 48px);
