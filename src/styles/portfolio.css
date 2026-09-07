@@ -4,14 +4,14 @@
    TOKENS
    ============================================================ */
 :root {
-  --ink:        #5A1A15;
-  --ink-soft:   #6E2A24;
-  --ink-line:   #8A3A33;
-  --paper:      #F3EFE7;
-  --paper-dim:  #E5DED1;
+  --ink:        #1C1B18;
+  --ink-soft:   #2E2C27;
+  --ink-line:   #403D36;
+  --paper:      #FBFAF6;
+  --paper-dim:  #EDE9DF;
   --signal:     #FFCC00;
-  --muted:      #6B5A4E;
-  --muted-light:#D9C4BF;
+  --muted:      #6B675E;
+  --muted-light:#A9A498;
 
   --font-display: 'Archivo', system-ui, sans-serif;
   --font-body:    'Source Serif 4', Georgia, serif;
@@ -849,3 +849,13 @@ body {
   .cmp__photos { grid-template-columns: 1fr; }
   .cmp__photo img { max-height: 340px; }
 }
+
+.figma-link {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid var(--signal);
+  padding-bottom: 2px;
+}
+.figma-link:hover { color: var(--signal); }

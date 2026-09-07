@@ -44,7 +44,7 @@ export default function App() {
         ))}
 
         {/* AI enablement */}
-        <Band id={aiSection.id} tone="dim" title={aiSection.title} lead={aiSection.lead}>
+        <Band id={aiSection.id} tone="ink" title={aiSection.title} lead={aiSection.lead}>
           <CaseList items={aiSection.items} />
         </Band>
 
@@ -58,6 +58,9 @@ export default function App() {
           <h3 style={{ marginBottom: '0.6rem' }}>{designSection.lobTitle}</h3>
           <p className="lead" style={{ marginBottom: '2rem' }}>
             {designSection.lobBody}
+          </p>
+          <p style={{ marginBottom: '2rem' }}>
+            <a className="figma-link" href={designSection.figmaUrl} target="_blank" rel="noreferrer">Open the full file in Figma →</a>
           </p>
           <div className="gal gal--wide">
             {designSection.lobShots.map((s) => (

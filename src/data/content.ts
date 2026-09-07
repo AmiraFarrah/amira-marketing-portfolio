@@ -159,80 +159,87 @@ export const videoSection = {
 /* ------------------------------------------------------------
    SECTION 2 — AI ENABLEMENT
    ------------------------------------------------------------ */
-export const aiSection = {
-  id: 'ai',
-  title: 'AI enablement',
-  lead:
-    'Helping colleagues who are not technical use generative AI in their own work, and building the automations behind the scenes.',
-  items: [
-    {
-      id: 'ai-copilot',
-      title: 'Getting colleagues to actually use Copilot',
-      sub: 'OliveSoft, 2026',
-      thumb: '/media/ai/copilot-deck-cover.jpg',
-      context:
-        'The company had Copilot licences that were barely being used. People had access but no reason to open it and no idea what to ask it.',
-      action:
-        'I built the session that made the case: concrete use cases taken from the work colleagues were already doing, a simple way to write prompts, and live examples rather than a feature tour.',
-      outcome:
-        'Replace this with what happened after the session: how many people attended, what they started using, what they asked for next.',
-      tools: 'Microsoft Copilot, PowerPoint',
-      visuals: [
-        { type: 'image', src: '/media/ai/copilot-slide-1.jpg' },
-        { type: 'image', src: '/media/ai/copilot-slide-2.jpg' },
-      ],
-      note: 'Client-specific details removed.',
-    },
-    {
-      id: 'ai-n8n',
-      title: 'Automations that non-technical colleagues can run themselves',
-      sub: 'OliveSoft, 2026',
-      thumb: '/media/ai/n8n-workflow.jpg',
-      context:
-        'Manual steps were eating time on lead detection and internal follow-up, and the people affected could not read a workflow diagram.',
-      action:
-        'I built the workflows in n8n and wrote short guidance next to each one, so colleagues could run them and adjust the parts that change without coming back to me.',
-      outcome: 'Replace this with the time saved or the number of people now running it.',
-      tools: 'n8n, generative AI',
-      visuals: [{ type: 'image', src: '/media/ai/n8n-workflow.jpg' }],
-      note: 'Client-specific details removed.',
-    },
-    {
-      id: 'ai-prompts',
-      title: 'A prompt structure people remember',
-      sub: 'OliveSoft, 2026',
-      thumb: '/media/ai/prompt-framework.jpg',
-      context:
-        'Colleagues were getting poor answers and blaming the tool. The gap was in how they were asking.',
-      action:
-        'I gave them one structure to hold onto: goal, context, source, expectations. Short enough to use under pressure.',
-      outcome: 'Replace this with what changed once people used it.',
-      tools: 'Microsoft Copilot',
-      visuals: [{ type: 'image', src: '/media/ai/prompt-framework.jpg' }],
-    },
-  ] as CaseItem[],
-};
+   export const aiSection = {
+    id: 'ai',
+    title: 'AI enablement',
+    lead:
+      'Helping colleagues who are not technical use generative AI in their own work — and building the case that gets them to try it in the first place.',
+    items: [
+      {
+        id: 'ai-case',
+        title: 'Making the case for AI inside the company',
+        sub: 'OliveSoft, 2026',
+        thumb: '/media/ai/ai-deck-cover.jpg',
+        context:
+          'The licences existed. The usage did not. People had access to AI tools and no reason to open them, because nobody had connected the tools to work they actually recognised.',
+        action:
+          'I built the session that made the case. Not a feature tour: a scenario taken from a real client project, showing where time disappears when data, dashboards and documents sit in four different tools. Then the same work with an AI layer on top, step by step.',
+        outcome:
+          'Replace this with what happened after the session: who attended, what they started using, what they asked for next.',
+        tools: 'Microsoft Copilot, PowerPoint',
+        visuals: [
+          { type: 'image', src: '/media/ai/ai-deck-cover.jpg' },
+          { type: 'image', src: '/media/ai/ai-deck-layer.jpg' },
+          { type: 'image', src: '/media/ai/ai-deck-reactive-proactive.jpg' },
+        ],
+        note: 'Client-specific details removed.',
+      },
+      {
+        id: 'ai-adoption',
+        title: 'Designing for adoption, not for launch',
+        sub: 'OliveSoft, 2026',
+        thumb: '/media/ai/ai-deck-ambassadors.jpg',
+        context:
+          'Most internal AI rollouts are announced once and then forgotten. The people who resist are usually the most experienced, and they resist for a good reason: generic automation threatens work they are known for.',
+        action:
+          'I split the audience into four groups and wrote a different approach for each, rather than one message for everyone. Then I designed the rollout around peers instead of announcements: find one curious colleague, give them a real task, capture the before and after, let them tell the story. It runs inside the channels people already use, not as a separate programme.',
+        outcome: 'Replace this with what changed once the first ambassador shared a result.',
+        tools: 'Microsoft Copilot',
+        visuals: [
+          { type: 'image', src: '/media/ai/ai-deck-ambassadors.jpg' },
+        ],
+      },
+      {
+        id: 'ai-measure',
+        title: 'Measuring adoption before measuring impact',
+        sub: 'OliveSoft, 2026',
+        thumb: '/media/ai/ai-deck-adoption-metrics.jpg',
+        context:
+          'AI initiatives get judged on business impact far too early. If people are not using the workflow weekly, there is no downstream value to measure and the initiative gets written off before it has run.',
+        action:
+          'I put adoption first as the leading indicator, with three supporting measures behind it: how many outputs are accepted without heavy editing, minutes saved per repeated task, and how many workflows spread across teams. Business value comes after, on time, quality and client impact.',
+        outcome: 'Replace this with the first numbers you tracked.',
+        tools: 'Power BI, Microsoft Copilot',
+        visuals: [
+          { type: 'image', src: '/media/ai/ai-deck-adoption-metrics.jpg' },
+          { type: 'image', src: '/media/ai/ai-deck-roi.jpg' },
+        ],
+      },
+    ] as CaseItem[],
+  };
 
 /* ------------------------------------------------------------
    SECTION 3 — DESIGN
    ------------------------------------------------------------ */
-export const designSection = {
-  id: 'design',
-  title: 'Design and visual systems',
-  lead:
-    'Brand-consistent campaign material, and a full design system built so the same product could be extended by someone else.',
-  lobTitle: 'Lob — a design system, not a set of screens',
-  lobBody:
-    'A mobile product for stray animal rescue in Tunisia. I built the logo rules, a named colour palette, a full type scale, an icon set and a button library first, then designed eight flows on top of it. The point was consistency: anyone picking it up gets the same result without asking me what the rules are.',
-  lobShots: [
-    { src: '/media/design/lob-system.jpg', alt: 'Logo rules, colour palette, typography and icon set' },
-    { src: '/media/design/lob-buttons.jpg', alt: 'Button and component library' },
-    { src: '/media/design/lob-onboarding.jpg', alt: 'Loading, sign-up and login flows' },
-    { src: '/media/design/lob-maps.jpg', alt: 'Access and map search flows' },
-    { src: '/media/design/lob-report.jpg', alt: 'Lost pet reporting and adoption flows' },
-    { src: '/media/design/lob-profile.jpg', alt: 'Food donation and profile flows' },
-  ],
-};
+   export const designSection = {
+    id: 'design',
+    title: 'Design systems',
+    lead:
+      'A full mobile product designed rules-first: logo usage, a named colour palette, a type scale, an icon set and a component library, then eight flows built on top of them.',
+    lobTitle: 'Lob نحنا — a system, not a set of screens',
+    lobBody:
+      'A stray animal rescue app for Tunisia. Before drawing a single screen I wrote the rules: where the full logo can be used and where only the icon, what every colour is called and what it means, and a type scale that covers everything from a screen title down to a timestamp. Naming a red "Rescue Red" instead of #E14B3F is what makes a palette usable by someone who is not me. Eight flows came after, and none of them needed a new decision.',
+    figmaUrl:
+      'https://www.figma.com/design/ijLP42NxayoFIgiaP4BwI8/Lob%D9%86%D8%AD%D9%86%D8%A7?m=auto&t=ETP3TPGKsyTGEf8M-6',
+    lobShots: [
+      { src: '/media/lob/lob-system.jpg', alt: 'Logo rules, named colour palette, type scale and icon set' },
+      { src: '/media/lob/lob-buttons.jpg', alt: 'Button and component library across states' },
+      { src: '/media/lob/lob-onboarding.jpg', alt: 'Application loading, sign up and login flows' },
+      { src: '/media/lob/lob-maps.jpg', alt: 'Access and map search flows' },
+      { src: '/media/lob/lob-report.jpg', alt: 'Lost pet reporting and adoption flows' },
+      { src: '/media/lob/lob-profile.jpg', alt: 'Food donation and profile flows' },
+    ],
+  };
 
 /* ------------------------------------------------------------
    SECTION 4 — CAMPAIGNS
