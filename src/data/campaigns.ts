@@ -217,4 +217,5 @@ export const campaigns: Campaign[] = [
         { src: '/media/wwf/wwf-team-panda.jpg', caption: 'At the WWF Belgium office after the session.' },
       ],
     },
-  
+ 
+];
